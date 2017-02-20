@@ -1,11 +1,11 @@
-id: collected_works10
+id: collected_works
 label: Import collected works of mathematicians
 migration_groups:
   - CUL import
 
 source:
   plugin: csv
-  path: 'mathematics-site/collected_works_fm_csv_sample.csv'
+  path: 'files/imports/collected_works_fm_csv.csv'
   header_row_count: 1
   keys:
     - UID

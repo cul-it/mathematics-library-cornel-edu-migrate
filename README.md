@@ -3,7 +3,7 @@
 Post D8 migration import of CSV file into math site
 
 Move the Excel spreadsheet into Filemaker to create the UID field
-  * UID is md5 hash of Author,Title,Place,Publisher,Date
+  * UID is md5 hash of Author,Title,Place,Publisher,Date,Cornell Holdings
   * GetContainerAttribute (string ; "MD5" )
 
 Export from Filemaker as CSV file

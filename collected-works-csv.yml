@@ -1,0 +1,28 @@
+id: collected_works10
+label: Import collected works of mathematicians
+migration_groups:
+  - CUL import
+
+source:
+  plugin: csv
+  path: 'mathematics-site/collected_works_fm_csv_sample.csv'
+  header_row_count: 1
+  keys:
+    - UID
+
+process:
+  type:
+    plugin: default_value
+    default_value: collec
+  title: Title
+  field_cw_author: Author
+  field_cw_place: Place
+  field_cw_publisher: Publisher
+  field_cw_date_range: Date
+  field_cw_cornell_holdings: CornellHoldings
+  field_cw_bibid: BIBID
+  field_cw_oclc: OCLCID
+  field_cw_workid: WorkID
+
+destination:
+  plugin: entity:node

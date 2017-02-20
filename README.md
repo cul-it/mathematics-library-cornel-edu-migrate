@@ -18,3 +18,12 @@ Place the csv file where Drupal can see it
 
 Drupal command to import configuration
   * kbox drush migrate-import collected_works10
+
+All commands in migrate_tools: (migrate_tools)
+ migrate-fields-sourc  List the fields available for mapping in a source.
+ migrate-import (mi)   Perform one or more migration processes.
+ migrate-messages      View any messages associated with a migration.
+ migrate-reset-status  Reset a active migration's status to idle.
+ migrate-rollback      Rollback one or more migrations.
+ migrate-status (ms)   List all migrations with current status.
+ migrate-stop (mst)    Stop an active migration operation.

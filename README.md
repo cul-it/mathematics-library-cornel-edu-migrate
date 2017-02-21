@@ -27,3 +27,11 @@ All commands in migrate_tools: (migrate_tools)
  migrate-rollback      Rollback one or more migrations.
  migrate-status (ms)   List all migrations with current status.
  migrate-stop (mst)    Stop an active migration operation.
+
+Another method
+terminus drush mathematicslibrarycornelledu.dev migrate-import collected_works_1
+
+
+******* MAKE SURE THE CSV FILES HAVE UNIX LINE ENDINGS ************
+
+******** MAKE SURE NONE OF THE CELLS IN THE CSV FILE ARE EMPTY *************

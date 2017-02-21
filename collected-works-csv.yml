@@ -5,7 +5,7 @@ migration_groups:
 
 source:
   plugin: csv
-  path: 'mathematics-site/collected_works_fm_csv.csv'
+  path: 'files/imports/collected_works_fm_csv.csv'
   header_row_count: 1
   keys:
     - UID

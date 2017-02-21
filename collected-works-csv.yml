@@ -1,3 +1,4 @@
+uuid: 7d9b244d-46a5-4c63-8c55-2f9e1bb92f49
 id: collected_works
 label: Import collected works of mathematicians
 migration_groups:
@@ -5,7 +6,7 @@ migration_groups:
 
 source:
   plugin: csv
-  path: 'files/imports/collected_works_fm_csv.csv'
+  path: 'mathematics-site/collected_works_fm_csv.csv'
   header_row_count: 1
   keys:
     - UID

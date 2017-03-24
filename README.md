@@ -61,9 +61,24 @@ All commands in migrate_tools: (migrate_tools)
     migrate-stop (mst)    Stop an active migration operation.
 
 Another method
+
+Push the csv file up to the dev site
+
+* use sftp to place the file
 `
+sftp> put collected_works_fm_csv.csv files/import/collected_works_fm_csv.csv
+`
+* adjust the .yml file for the new path
+* roll back previous import
+
+`
+terminus drush mathematicslibrarycornelledu.dev migrate-status
+terminus drush mathematicslibrarycornelledu.dev migrate-rollback  collected_works18
+
 terminus drush mathematicslibrarycornelledu.dev migrate-import collected_works_1
 `
+
+_note: last time I tried the terminus method, the server ran out of memory instead of doing the import_
 
 ** MAKE SURE THE CSV FILES HAVE UNIX LINE ENDINGS **
 

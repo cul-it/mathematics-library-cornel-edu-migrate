@@ -45,6 +45,14 @@ If you get an error like this:
 Place the csv file where Drupal can see it
 
 * ~/Kalabox/mathematicslibrarycornelledu/code/mathematics-site
+* this path corresponds to path: 'mathematics-site/collected_works_fm_csv.csv' in the .yml file
+
+Roll back the current list of collected works nodes
+
+* Find out which migration is responsible for the current list
+  > kbox drush migrate-status
+  * there should be one migration showing a number of nodes in the Imported column
+  > kbox drush migrate-rollback collected_works18
 
 Drupal command to import configuration
 

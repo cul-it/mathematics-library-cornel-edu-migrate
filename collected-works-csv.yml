@@ -13,7 +13,7 @@ source:
 process:
   type:
     plugin: default_value
-    default_value: collec
+    default_value: collected_works
   title: Title
   field_cw_author: Author
   field_cw_place: Place

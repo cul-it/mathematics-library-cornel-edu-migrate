@@ -8,10 +8,13 @@ Move the Excel spreadsheet into Filemaker to create the UID field
 * GetContainerAttribute (string ; "MD5" )
 * delete all existing records, then import xlsx file
 * import worksheet 'CollectedWorks'
-* don't import UID or Subset fields
+* don't import UID or Subset fields - calculated by Filemaker
 * aboout 1084 records
-* delete first record - Field names and generated UID
-* delete records at the end with no Author
+* Run Filemaker Script called 'Cleanup Import'
+  * deletes first record - Field names and generated UID
+  * deletes records at the end with no Author
+  * replaces empty BIBID and OCLC with 0
+  * sorts by author
 
 Export from Filemaker as CSV file
 
@@ -27,6 +30,7 @@ Import collected-works-csv.yml file as a Configuration Type 'Migration'
 * pull the site down into Kalabox
 * /admin/config/development/configuration/single/import
 * configuration type Migration
+* modify the date suffix in the .yml id: line to today's date
 * paste in the yml file contents
 
 If you get an error like this:
@@ -44,7 +48,7 @@ Place the csv file where Drupal can see it
 
 Drupal command to import configuration
 
-* kbox drush migrate-import collected_works10
+* kbox drush migrate-import collected_works20140324
 
 All commands in migrate_tools: (migrate_tools)
 >

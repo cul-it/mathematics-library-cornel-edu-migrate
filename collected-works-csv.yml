@@ -1,11 +1,11 @@
-id: collected_works
+id: collected_works20170324b
 label: Import collected works of mathematicians
 migration_groups:
   - CUL import
 
 source:
   plugin: csv
-  path: 'files/imports/collected_works_fm_csv.csv'
+  path: 'mathematics-site/collected_works_fm_csv.csv'
   header_row_count: 1
   keys:
     - UID
@@ -13,7 +13,7 @@ source:
 process:
   type:
     plugin: default_value
-    default_value: collec
+    default_value: collected_works
   title: Title
   field_cw_author: Author
   field_cw_place: Place

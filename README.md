@@ -28,10 +28,13 @@ Export from Filemaker as CSV file
 Import collected-works-csv.yml file as a Configuration Type 'Migration'
 
 * pull the site down into Kalabox
+* move a copy of collected_works_fm_csv.csv into ~/Kalabox/mathematicslibrarycornelledu/code/mathematics-site
 * /admin/config/development/configuration/single/import
 * configuration type Migration
+* working with collected-works-csv.yml
 * modify the date suffix in the .yml id: line to today's date
 * paste in the yml file contents
+* click on the Import button
 
 If you get an error like this:
 >  An entity with this machine name already exists but the import did not specify a UUID.
